@@ -3,14 +3,19 @@ package com.domain.faker.nfl.service;
 import com.domain.faker.nfl.model.Game;
 import com.domain.faker.nfl.model.GameStatistics;
 import com.domain.faker.nfl.model.Player;
+import com.domain.faker.nfl.model.PlayerStatistics;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.UUID;
+import java.util.stream.IntStream;
 
 @Service
 @RequiredArgsConstructor
 public class StatisticsService {
 
-    private final Player playerStatisticsFaker = new Player();
+    private final PlayerStatistics playerStatisticsFaker = new PlayerStatistics();
     private final GameStatistics gameStatisticsFaker = new GameStatistics();
     private final Player playerFaker = new Player();
 
