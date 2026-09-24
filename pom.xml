@@ -11,7 +11,8 @@
 
 	<groupId>flavio.domain</groupId>
 	<artifactId>faker</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
 
 	<name/>
 	<description/>
@@ -79,5 +80,13 @@
 				</plugin>
 			</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/endovelico/DomainFaker</url>
+		</repository>
+	</distributionManagement>
 
 </project>
